@@ -23,6 +23,7 @@ async function run() {
     const Liteitems = database.collection("items");
     const Orderitems = database.collection("Orders");
     const userCollection = database.collection("users");
+    const ReviewCollection = database.collection("review");
      
         // POST API
         app.post('/product', async (req, res) => {
@@ -133,7 +134,27 @@ async function run() {
 
          res.json({admin: isAdmin});
 
+    });
+
+
+     //   Product Delete Api
+
+       app.delete('/product/:id', async (req,res) => {
+      const id = req.params.id;
+      const query = {_id: ObjectId(id)};
+      const result = await Liteitems.deleteOne(query);
+      res.send(result);
     })
+
+    
+    // Review Api
+
+     app.post('/review', async (req, res) => {
+         const service = req.body;
+         const result = await ReviewCollection.insertOne(service);
+         res.json(result);
+    })
+    
 
 
   } 
