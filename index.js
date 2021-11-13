@@ -155,7 +155,13 @@ async function run() {
          res.json(result);
     })
     
-
+     // Review GET API 
+       app.get('/review', async (req, res) => {
+      const cursor = ReviewCollection.find({});
+      const services = await cursor.toArray();
+      res.json(services);
+      })
+ 
 
   } 
 
