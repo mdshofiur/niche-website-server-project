@@ -1,8 +1,8 @@
 Website Name: LightMaster.com
 
-Github Private Client-Side Rep Link: https://github.com/programming-hero-web-course-4/niche-website-client-side-mdshofiur
+Github Private Client-Side Rep Link: https://github.com/mdshofiur/niche-website-client-project
 
-Github Private Server-Side Rep Link: https://github.com/programming-hero-web-course-4/niche-website-server-side-mdshofiur
+Github Private Server-Side Rep Link: https://github.com/mdshofiur/niche-website-server-project
 
 Firebase Client-side Live Link: https://assignment-12-54e26.web.app/
 
